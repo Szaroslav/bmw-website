@@ -3,6 +3,7 @@ import Header from './Header.js';
 import MainContent from './MainContent.js';
 import Gallery from './Gallery.js';
 import TestDriveForm from './TestDriveForm.js';
+import Footer from './Footer.js';
 
 class Bmw extends React.Component {
     render = () => {
@@ -12,6 +13,7 @@ class Bmw extends React.Component {
                 <MainContent />
                 <Gallery />
                 <TestDriveForm />
+                <Footer />
             </div>
         );
     }
