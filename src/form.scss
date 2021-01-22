@@ -1,0 +1,14 @@
+@import '_variables.scss';
+
+.bmw-default-btn {
+    padding: 15px 90px;
+    color: $white;
+    background-color: $primary-blue;
+    border: none;
+    cursor: pointer;
+    @include transition(.2s ease-out)
+
+    &:hover {
+        background-color: $light-blue;
+    }
+}

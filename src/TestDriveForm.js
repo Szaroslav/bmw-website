@@ -28,6 +28,9 @@ const TestDriveForm = () => {
                     <li>
                         <input type='text' name='phone_number' placeholder='Numer telefonu*' required />
                     </li>
+                    <li>
+                        <input className='bmw-default-btn' type='submit' value='WYŚLIJ' />
+                    </li>
                 </ul>
             </form>
         </section>

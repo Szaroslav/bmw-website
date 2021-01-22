@@ -30,7 +30,7 @@ const Header = (props) => {
             <div className={props.name + '-header-content'}>
                 <h2>NOWE BMW iX</h2>
                 <p>PIONIER NOWEJ ERY</p>
-                <button>UMÓW JAZDĘ PRÓBNĄ</button>
+                <button className='bmw-default-btn'>UMÓW JAZDĘ PRÓBNĄ</button>
             </div>
         </header>
     );

@@ -1,5 +1,5 @@
 import React from 'react';
-import './footer.scss';
+import './Footer.scss';
 import { ReactComponent as FacebookLogotype } from './assets/facebook-logotype.svg';
 import { ReactComponent as InstagramLogotype } from './assets/instagram-logotype.svg';
 import { ReactComponent as YoutubeLogotype } from './assets/youtube-logotype.svg';
