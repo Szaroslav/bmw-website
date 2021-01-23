@@ -1,10 +1,10 @@
 import React from 'react';
 import './Footer.scss';
-import { ReactComponent as FacebookLogotype } from './assets/facebook-logotype.svg';
-import { ReactComponent as InstagramLogotype } from './assets/instagram-logotype.svg';
-import { ReactComponent as YoutubeLogotype } from './assets/youtube-logotype.svg';
-import { ReactComponent as LinkedinLogotype } from './assets/linkedin-logotype.svg';
-import { ReactComponent as TwitterLogotype } from './assets/twitter-logotype.svg';
+import { ReactComponent as FacebookLogotype } from './assets/sm/facebook-logotype.svg';
+import { ReactComponent as InstagramLogotype } from './assets/sm/instagram-logotype.svg';
+import { ReactComponent as YoutubeLogotype } from './assets/sm/youtube-logotype.svg';
+import { ReactComponent as LinkedinLogotype } from './assets/sm/linkedin-logotype.svg';
+import { ReactComponent as TwitterLogotype } from './assets/sm/twitter-logotype.svg';
 
 const Footer = () => {
     return (

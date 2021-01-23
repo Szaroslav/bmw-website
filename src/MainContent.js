@@ -1,5 +1,7 @@
 import React from 'react';
 import List from './List.js';
+import { ReactComponent as BmwIcon1 } from './assets/bmw/main-content-icon-1.svg';
+import { ReactComponent as BmwIcon2 } from './assets/bmw/main-content-icon-2.svg';
 
 const MainContent = () => {
     const listData = [
@@ -18,6 +20,7 @@ const MainContent = () => {
                     <img src='./assets/bmw-ix-preview-2.jpg' alt='bmw-ix-preview'></img>
                 </div>
                 <div>
+                    <BmwIcon1 />
                     <h3>FAKTY O NOWYM BMW iX.</h3>
                     <List data={listData} />
                 </div>
@@ -28,6 +31,7 @@ const MainContent = () => {
                     <img src='./assets/bmw-ix-preview-4.jpg' alt='bmw-ix-preview'></img>
                 </div>
                 <div>
+                    <BmwIcon2 />
                     <h3>INNOWACYJNA AERODYNAMIKA BMW iX.</h3>
                     <p>
                         BMW iX w każdym milimetrze swojej dynamicznej stylistyki wdraża zasadę „forma podąża za funkcją”.

@@ -1,7 +1,7 @@
 import React from 'react';
 import './Header.scss';
-import { ReactComponent as BmwLogotype } from './assets/bmw-logotype.svg';
-import { ReactComponent as BmwIxLogotype } from './assets/bmw-ix-logotype.svg';
+import { ReactComponent as BmwLogotype } from './assets/bmw/bmw-logotype.svg';
+import { ReactComponent as BmwIxLogotype } from './assets/bmw/bmw-ix-logotype.svg';
 
 const Header = (props) => {
     return (
