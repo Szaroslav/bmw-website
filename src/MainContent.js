@@ -1,6 +1,15 @@
 import React from 'react';
+import List from './List.js';
 
 const MainContent = () => {
+    const listData = [
+        "Ponad 600 km zasięgu *",
+        "Elektryczny napęd na wszystkie koła z dwiema osiami napędzanymi elektrycznie i ponad 500 KM (370 kW) *",
+        "Od 0 do 100 km / h w mniej niż 5 sekund *",
+        "Ładowanie 120 km w 10 minut *",
+        "Publiczne szybkie ładowanie od 10 do 80% w mniej niż 40 minut"
+    ];
+
     return (
         <main id='bmw-main-content'>
             <section>
@@ -10,6 +19,7 @@ const MainContent = () => {
                 </div>
                 <div>
                     <h3>FAKTY O NOWYM BMW iX.</h3>
+                    <List data={listData} />
                 </div>
             </section>
             <section>

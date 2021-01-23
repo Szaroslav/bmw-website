@@ -54,16 +54,13 @@ $navigation-line-size: 2px;
                 }
 
                 &::before {
-                    display: block;
-                    width: 100%;
                     height: 100%;
-                    content: '';
                     background-color: $primary-blue;
-                    position: absolute;
                     top: 0;
                     left: 0;
                     transform-origin: center center;
                     transform: scaleX(0);
+                    @extend %before-empty;
                     @include transition(.2s ease-out);
                 }
 
@@ -118,16 +115,13 @@ $navigation-line-size: 2px;
                         position: relative;
 
                         &::before {
-                            display: block;
-                            width: 100%;
                             height: $navigation-line-size;
-                            content: '';
                             background-color: $primary-blue;
-                            position: absolute;
                             bottom: -($navigation-v-padding + $navigation-line-size);
                             left: 0;
                             transform-origin: 0 center;
                             transform: scaleX(0);
+                            @extend %before-empty;
                             @include transition(.2s ease-out);
                         }
 

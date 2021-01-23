@@ -1,9 +1,17 @@
 $white: white;
-$primary-blue: #3369D3;
+$text-dark: #4e4e4e;
+$primary-blue: #3369d3;
 $light-blue:  #5b8cee;
 
 $primary-font: 'Cairo';
 $secondary-font: 'Open Sans';
+
+%before-empty {
+    display: block;
+    width: 100%;
+    content: '';
+    position: absolute;
+}
 
 @mixin transition($properties) {
     -webkit-transition: $properties;
