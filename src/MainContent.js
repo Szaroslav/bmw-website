@@ -2,7 +2,7 @@ import React from 'react';
 
 const MainContent = () => {
     return (
-        <main>
+        <main id='bmw-main-content'>
             <section>
                 <div>
                     <img src='./assets/bmw-ix-preview-1.jpg' alt='bmw-ix-preview'></img>

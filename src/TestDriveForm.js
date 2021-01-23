@@ -3,7 +3,7 @@ import './TestDriveForm.scss';
 
 const TestDriveForm = () => {
     return (
-        <section className='bmw-test-drive-form'>
+        <section id='bmw-test-drive-form' className='bmw-test-drive-form'>
             <h3>UMÓW JAZDĘ PRÓBNĄ <sup>BMW iX</sup></h3>
             <p>Zachęcamy do ograniczenia poruszania się i pozostania w domu.</p>
             <p>Jeśli jednak jazda testowa okaże się niezbędna prosimy o wypełnienie poniższego formularza.</p>

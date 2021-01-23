@@ -1,9 +1,21 @@
 @import '_variables.scss';
 
+$navigation-v-padding: 26px;
+$navigation-line-size: 2px;
+
 .bmw-header {
     width: 100%;
     position: relative;
     overflow: hidden;
+
+    a {
+        text-decoration: none;
+    }
+
+    .bmw-header-wrapper {
+        width: 75%;
+        margin: 0 auto;
+    }
 
     .bmw-header-slider {
         width: 100%;
@@ -11,6 +23,16 @@
         top: 0;
         left: 0;
         z-index: 0;
+
+        .bmw-header-slider-grad {
+            width: 70%;
+            height: 100%;
+            background: linear-gradient( to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+            opacity: .75;
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
 
         img {
             width: 100%;
@@ -62,26 +84,85 @@
     }
 
     .bmw-header-top-content {
-        nav > ul {
-            list-style: none;
+        display: flex;
+        flex-direction: column;
 
-            li {
-                display: inline-block;
+        .bmw-row {
+            display: flex;
+            align-items: center;
+        }
 
-                a {
-                    font: 700 18px $primary-font, sans-serif;
+        .bmw-paragraph {
+            margin: 8px 40px 0 auto;
+            font: 16px $primary-font;
+        }
+        
+        nav {
+            ul {
+                flex: 1 1 auto;
+                margin: 0 auto 0 0;
+                padding: $navigation-v-padding 0;
+                list-style: none;
+                border-bottom: $navigation-line-size solid rgba(255, 255, 255, .25);
+    
+                li {
+                    display: inline-block;
+
+                    &:not(:last-child) {
+                        padding-right: 60px;
+                    }
+    
+                    a {
+                        display: inline-block;
+                        font: 700 18px $primary-font, sans-serif;
+                        position: relative;
+
+                        &::before {
+                            display: block;
+                            width: 100%;
+                            height: $navigation-line-size;
+                            content: '';
+                            background-color: $primary-blue;
+                            position: absolute;
+                            bottom: -($navigation-v-padding + $navigation-line-size);
+                            left: 0;
+                            transform-origin: 0 center;
+                            transform: scaleX(0);
+                            @include transition(.2s ease-out);
+                        }
+
+                        &:hover::before {
+                            transform: scaleX(1);
+                        }
+                    }
                 }
             }
-        }
+        } 
     }
 
     .bmw-header-content {
-        padding: 48px 0;
+        padding-bottom: 54px;
+
+        h1, h2, h3, h4, h5, h6, p {
+            margin: 0;
+        }
 
         h2 {
             font-size: 64px;
             font-weight: 700;
-            margin: 206px 0;
+        }
+
+        p {
+            font-size: 16px;
+            font-weight: 600;
+        }
+        
+        .bmw-header-heading {
+            padding: 79px 0;
+        }
+
+        .bmw-header-button-wrapper {
+            text-align: center;
         }
     }
 }
