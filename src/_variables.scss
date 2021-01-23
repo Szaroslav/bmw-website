@@ -2,6 +2,9 @@ $white: white;
 $primary-blue: #3369D3;
 $light-blue:  #5b8cee;
 
+$primary-font: 'Cairo';
+$secondary-font: 'Open Sans';
+
 @mixin transition($properties) {
     -webkit-transition: $properties;
     -moz-transition: $properties;

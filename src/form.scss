@@ -1,12 +1,16 @@
 @import '_variables.scss';
 
-.bmw-default-btn {
-    padding: 15px 90px;
-    color: $white;
-    background-color: $primary-blue;
+button, input[type=submit] {
     border: none;
     cursor: pointer;
-    @include transition(.2s ease-out)
+}
+
+.bmw-default-btn {
+    padding: 15px 90px;
+    font: 600 18px $primary-font, sans-serif;
+    color: $white;
+    background-color: $primary-blue;
+    @include transition(.2s ease-out);
 
     &:hover {
         background-color: $light-blue;

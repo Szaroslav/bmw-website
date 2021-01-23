@@ -16,8 +16,8 @@ const Header = (props) => {
             <div className='bmw-header-top-content'>
                 <nav className={props.name + '-header-nav bmw-row'}>
                     <ul>
-                        <li>Nowe BMW iX</li>
-                        <li>Umów jazdę próbną</li>
+                        <li><a>Nowe BMW iX</a></li>
+                        <li><a>Umów jazdę próbną</a></li>
                     </ul>
                     <BmwLogotype />
                 </nav>
