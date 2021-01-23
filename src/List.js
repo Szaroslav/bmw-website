@@ -9,7 +9,7 @@ const List = ({ data }) => {
                 return (
                     <li className='bmw-list-item' key={i}>
                         <div className='bmw-list-heading'>
-                            <p>{i}</p>  
+                            <p>{i + 1}</p>  
                         </div> 
                         <p className='bmw-list-content'>{v}</p>
                     </li>
