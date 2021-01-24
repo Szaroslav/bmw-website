@@ -7,8 +7,8 @@ const TestDriveForm = () => {
             <div className='bmw-test-drive-bg'>
                 <img src='./assets/test-drive/bmw-ix-l.png' alt='bmw-ix-l' />
                 <img src='./assets/test-drive/bmw-ix-r.png' alt='bmw-ix-r' />
-                <img src='./assets/test-drive/triangle-1.png' alt='triangle-1' />
-                {/* <img src='./assets/test-drive/triangle-2.png' alt='triangle-2' />
+                {/*<img src='./assets/test-drive/triangle-1.png' alt='triangle-1' />
+                <img src='./assets/test-drive/triangle-2.png' alt='triangle-2' />
                 <img src='./assets/test-drive/triangle-3.png' alt='triangle-3' /> */}
             </div>
             <div className='bmw-test-drive-wrapper'>
@@ -19,9 +19,9 @@ const TestDriveForm = () => {
                     <p>Wypełnij formularz swoimi danymi.</p>
                     <ul>
                         <li>
-                            <input type='radio' id='male' name='sex' value='male' />
+                            <input type='radio' id='male' name='sex' value='male' required />
                             <label for='male'>Pan</label>
-                            <input type='radio' id='female' name='sex' value='female' />
+                            <input type='radio' id='female' name='sex' value='female' required />
                             <label for='female'>Pani</label>
                         </li>
                         <li>

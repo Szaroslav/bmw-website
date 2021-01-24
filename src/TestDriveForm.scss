@@ -1,6 +1,44 @@
+@import '_variables.scss';
+
 .bmw-test-drive-form {
     padding: 190px;
     position: relative;
+
+    h3 {
+        font-size: 36px;
+        font-weight: 700;
+    }
+
+    sup {
+        vertical-align: top;
+    }
+    
+    p {
+        font: 300 20px $secondary-font, sans-serif;
+        color: #707070;
+    }
+
+    form {
+        margin-top: 90px;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+
+        li {
+            padding: 15px 0;
+        }
+    }
+
+    input[type=text] {
+        width: 75%;
+        padding: 10px 20px;
+        font: 14px $secondary-font, sans-serif;
+        color: $text-dark;
+        border: 1px solid rgba(112, 112, 112, .25);
+    }
 
     .bmw-test-drive-bg {
         width: 100%;
@@ -9,6 +47,7 @@
         top: 0;
         left: 0;
         z-index: 0;
+        overflow: hidden;
 
         img {
             position: absolute;
@@ -16,11 +55,14 @@
 
         img:nth-child(1) {
             bottom: 120px;
+            right: 50%;
+            transform: translateX(calc(-50% + 240px));
         }
 
         img:nth-child(2) {
             top: 180px;
-            left: 60%;
+            left: 50%;
+            transform: translateX(calc(-50% + 466px));
         }
 
         img:nth-child(3) {
