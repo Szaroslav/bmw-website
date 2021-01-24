@@ -1,21 +1,29 @@
 import React from 'react';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import SwiperCore, { Pagination } from 'swiper';
+
 import './Header.scss';
+import 'swiper/swiper.scss';
+
 import { ReactComponent as BmwLogotype } from './assets/bmw/bmw-logotype.svg';
 import { ReactComponent as BmwIxLogotype } from './assets/bmw/bmw-ix-logotype.svg';
+
+SwiperCore.use([ Pagination ]);
 
 const Header = (props) => {
     return (
         <header className={props.name + '-header'}>
+            <Swiper 
+                className='swiper-no-swiping'
+                pagination={{ el: '.header-slider-pagination', clickable: true, renderCustom: (swiper, current, total) => current + 'of' + total }}
+            >
+                <div className='bmw-header-slider-grad'></div>
+                <SwiperSlide />
+                <SwiperSlide></SwiperSlide>
+                <SwiperSlide></SwiperSlide>
+            </Swiper>  
             <div className='bmw-fluid-container'>
-                <div className={props.name + '-header-slider'}>
-                    <div className='bmw-header-slider-grad'></div>
-                    <img src='./assets/header-slider.jpg' alt='header-slider-1' />
-                    <div className='bmw-header-slider-btn-ctn'>
-                        <button className='bmw-header-slider-btn'></button>
-                        <button className='bmw-header-slider-btn'></button>
-                        <button className='bmw-header-slider-btn'></button>
-                    </div>
-                </div>
+                <div className='header-slider-pagination'></div>
                 <div className='bmw-header-top-content'>
                     <nav className={props.name + '-header-nav bmw-row'}>
                         <ul>
