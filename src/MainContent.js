@@ -15,22 +15,21 @@ const MainContent = () => {
 
     return (
         <main id='bmw-main-content' className='bmw-main-content'>
-            <div className='bmw-main-content-wrapper'>
-                <section className='first-main-content-section'>
+                <section className='main-content-section-1 bmw-fluid-container irregular-right'>
                     <div className='bmw-row' style={{ alignSelf: 'end' }}>
                         <img src='./assets/bmw-ix-preview-1.jpg' alt='bmw-ix-preview' style={{ marginTop: '0' }} />
                     </div>
-                    <div className='bmw-row'>
+                    <div className='bmw-row' style={{ paddingLeft: '16px' }}>
                         <img src='./assets/bmw-ix-preview-2.jpg' alt='bmw-ix-preview' />
                     </div>
-                    <div className='bmw-row'>
+                    <div className='bmw-row content' style={{ paddingLeft: '8%' }}>
                         <BmwIcon1 />
                         <h3>FAKTY O NOWYM BMW iX.</h3>
                         <List data={listData} />
                     </div>
                 </section>
-                <section className='second-main-content-section'> 
-                    <div className='bmw-row'>
+                <section className='main-content-section-2 bmw-fluid-container irregular-left'> 
+                    <div className='bmw-row content' style={{ paddingRight: '8%' }}>
                         <BmwIcon2 />
                         <h3>INNOWACYJNA AERODYNAMIKA BMW iX.</h3>
                         <p>
@@ -44,14 +43,13 @@ const MainContent = () => {
                             z innowacyjną konstrukcją SAV-a.
                         </p>
                     </div>
-                    <div className='bmw-row'>
+                    <div className='bmw-row' style={{ paddingRight: '16px' }}>
                         <img src='./assets/bmw-ix-preview-3.jpg' alt='bmw-ix-preview' />
                     </div>
                     <div className='bmw-row' style={{ alignSelf: 'baseline' }}>
                         <img src='./assets/bmw-ix-preview-4.jpg' alt='bmw-ix-preview' />
                     </div>
-                </section>
-            </div>       
+                </section>      
         </main>
     );
 }

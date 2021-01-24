@@ -1,0 +1,19 @@
+$fluid-width:           75%;
+$fluid-irr-width:       82.5%;
+
+.bmw-fluid-container {
+    width: $fluid-width;
+    margin: 0 auto;
+
+    &.irregular-left, &.irregular-right  {
+        width: $fluid-irr-width;
+    }
+
+    &.irregular-left {
+        margin: 0 auto 0 ((100% - $fluid-width) / 2);
+    }
+
+    &.irregular-right {
+        margin: 0 ((100% - $fluid-width) / 2) 0 auto;
+    }
+}

@@ -6,7 +6,7 @@ import { ReactComponent as BmwIxLogotype } from './assets/bmw/bmw-ix-logotype.sv
 const Header = (props) => {
     return (
         <header className={props.name + '-header'}>
-            <div className='bmw-header-wrapper'>
+            <div className='bmw-fluid-container'>
                 <div className={props.name + '-header-slider'}>
                     <div className='bmw-header-slider-grad'></div>
                     <img src='./assets/header-slider.jpg' alt='header-slider-1' />

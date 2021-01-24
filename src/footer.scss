@@ -1,0 +1,41 @@
+.bmw-footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #e6e6e6;
+
+    a {
+        text-decoration: none;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+
+    .footer-sm {
+        display: flex;
+        justify-content: end;
+        align-items: center;
+
+        h4 {
+            margin: 0;
+        }
+
+        ul > li {
+            display: inline-block;
+        }
+    }
+
+    .footer-navigation {
+        display: flex;
+
+        div {
+            flex: 1 1 auto;
+        }
+    }
+
+    .footer-copyright {
+        background-color: white;
+    }
+}
