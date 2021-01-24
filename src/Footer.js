@@ -13,11 +13,31 @@ const Footer = () => {
                 <div className='bmw-row footer-sm'>
                     <h4>Dołącz do nas</h4>
                     <ul>
-                        <li><FacebookLogotype /></li>
-                        <li><InstagramLogotype /></li>
-                        <li><YoutubeLogotype /></li>
-                        <li><LinkedinLogotype /></li>
-                        <li><TwitterLogotype /></li>
+                        <li className='sm-facebook'>
+                            <a href='https://www.facebook.com/BMW/' target='_blank' rel='noopener noreferrer'>
+                                <FacebookLogotype />
+                            </a>
+                        </li>
+                        <li className='sm-instagram'>
+                            <a href='https://www.instagram.com/bmw/?hl=en' target='_blank' rel='noopener noreferrer'>
+                                <InstagramLogotype />
+                            </a>
+                        </li>
+                        <li className='sm-youtube'>
+                            <a href='https://www.youtube.com/user/BMW' target='_blank' rel='noopener noreferrer'>
+                                <YoutubeLogotype />
+                            </a>
+                        </li>
+                        <li className='sm-linkedin'>
+                            <a href='https://www.google.com/search?client=firefox-b-d&q=linkedin+bmw' target='_blank' rel='noopener noreferrer'>
+                                <LinkedinLogotype />
+                            </a>
+                        </li>
+                        <li className='sm-twitter'>
+                            <a href='https://twitter.com/BMW?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor' target='_blank' rel='noopener noreferrer'>
+                                <TwitterLogotype />
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <nav className='bmw-row footer-navigation'>

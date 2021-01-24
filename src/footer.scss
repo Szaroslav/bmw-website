@@ -1,3 +1,5 @@
+@import '_variables.scss';
+
 .bmw-footer {
     display: flex;
     flex-direction: column;
@@ -13,29 +15,103 @@
         list-style-type: none;
     }
 
+    h4 {
+        font: 300 20px $font-tertiary, sans-serif;
+        color: $grey;
+    }
+
     .footer-sm {
         display: flex;
+        padding: 36px 0;
         justify-content: end;
         align-items: center;
+        border-bottom: 1px solid #bebebe;
 
         h4 {
             margin: 0;
         }
 
-        ul > li {
-            display: inline-block;
+        ul {
+            height: 40px;
+            margin-left: 30px;
+
+            li {
+                display: inline-block;
+                height: 100%;
+
+                &:not(:last-child) {
+                    margin-right: 20px;
+                }
+
+
+                /* * * * * Social media hover colors * * * * */
+
+                &.sm-facebook:hover > a > svg {
+                    fill: #129cf7;
+                }
+
+                &.sm-instagram:hover > a > svg {
+                    fill: #924eb0;
+                }
+
+                &.sm-youtube:hover > a > svg {
+                    fill: #f70000;
+                }
+
+                &.sm-linkedin:hover > a > svg {
+                    fill: #0288c4;
+                }
+
+                &.sm-twitter:hover > a > svg {
+                    fill: #1c9cea;
+                }
+
+                /* * * * * * * * * * * * * * * * * * * * * * * * */
+
+
+                svg {
+                    height: 24px;
+                    padding: 8px;
+                    fill: #212121;
+                    @include transition(.15s ease-in-out)
+                }
+            }
         }
     }
 
     .footer-navigation {
         display: flex;
+        padding: 96px;
 
         div {
             flex: 1 1 auto;
         }
+
+        h4 {
+            margin-top: 0;
+        }
+
+        a, a:visited {
+            color: $grey;
+        }
+
+        a {
+            font: 700 14px $font-tertiary, sans-serif;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 
     .footer-copyright {
+        padding: 20px 0;
         background-color: white;
+
+        p {
+            margin: 0;
+            font: 14px $font-tertiary, sans-serif;
+            color: $text-dark;
+        }
     }
 }
