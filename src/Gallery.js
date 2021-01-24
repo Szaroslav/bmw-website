@@ -4,11 +4,22 @@ import './Gallery.scss';
 const Gallery = () => {
     return (
         <section className='bmw-gallery'>
-            <img src='./assets/gallery/bmw-ix-preview-1.jpg' alt='bmw-ix-preview' />
-            <img src='./assets/gallery/bmw-ix-preview-2.jpg' alt='bmw-ix-preview' />
-            <img src='./assets/gallery/bmw-ix-preview-3.jpg' alt='bmw-ix-preview' />
-            <img src='./assets/gallery/bmw-ix-preview-4.jpg' alt='bmw-ix-preview' />
-            <img src='./assets/gallery/bmw-ix-preview-5.jpg' alt='bmw-ix-preview' />
+            <div className='bmw-gallery-img-1 gallery-item'>
+                <div className='gallery-img'></div>
+                {/* <img src='./assets/gallery/bmw-ix-preview-1.jpg' alt='bmw-ix-preview' /> */}
+            </div>
+            <div className='bmw-gallery-img-2 gallery-item'>
+                <div className='gallery-img'></div>
+            </div>
+            <div className='bmw-gallery-img-3 gallery-item'>
+                <div className='gallery-img'></div>
+            </div>
+            <div className='bmw-gallery-img-4 gallery-item'>
+                <div className='gallery-img'></div>
+            </div>
+            <div className='bmw-gallery-img-5 gallery-item'>
+                <div className='gallery-img'></div>
+            </div>
         </section>
     );
 }
