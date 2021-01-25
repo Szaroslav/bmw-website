@@ -17,7 +17,7 @@ const Header = (props) => {
                 className='swiper-no-swiping'
                 speed={600}
                 pagination={{ el: '.header-slider-pagination', clickable: true, renderCustom: (swiper, current, total) => current + 'of' + total }}
-                autoplay={{ delay: 8000 }}
+                autoplay={{ delay: 8000, disableOnInteraction: false }}
             >
                 <div className='bmw-header-slider-grad'></div>
                 <SwiperSlide />
