@@ -10,6 +10,8 @@ button, input[type=submit] {
     font: 600 18px $primary-font, sans-serif;
     color: $white;
     background-color: $primary-blue;
+    border: none;
+    border-radius: 0;
     @include transition(.2s ease-out);
 
     &:hover {

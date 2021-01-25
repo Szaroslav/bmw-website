@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useState } from 'react';
+import MenuHamburger from './MenuHamburger.js';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Pagination, Autoplay } from 'swiper';
 
@@ -11,6 +12,9 @@ import { ReactComponent as BmwIxLogotype } from './assets/bmw/bmw-ix-logotype.sv
 SwiperCore.use([ Pagination, Autoplay ]);
 
 const Header = () => {
+    const [ menuActive, setMenuActive ] = useState(false);
+    const menuClassName = menuActive ? ' active' : '';
+
     return (
         <header className='bmw-header'>
             <Swiper 
@@ -23,14 +27,30 @@ const Header = () => {
                 <SwiperSlide className='bmw-slider__slide-1' />
                 <SwiperSlide className='bmw-slider__slide-3' />
                 <SwiperSlide className='bmw-slider__slide-2' />
-            </Swiper>  
+            </Swiper>
+            <nav className={`bmw-header__nav${menuClassName}`}>
+                <div className='bmw-fluid-container'>
+                    <div>
+                        <a className='nav__website-logo' href='.'><BmwLogotype /></a>
+                    </div>
+                    <ul className='nav__menu-mobile'>
+                        <li className='menu-mobile__item'><a href='#bmw-main-content'>NOWE BMW iX</a></li>
+                        <li className='menu-mobile__item'><a href='#bmw-test-drive-form'>INNOWACYJNA AERODYNAMIKA</a></li>
+                        <li className='menu-mobile__item'><a href='#bmw-test-drive-form'>GALERIA</a></li>
+                    </ul>
+                    <div className='content__button-wrapper'>
+                        <button className='content__td-button bmw-default-btn'>UMÓW JAZDĘ PRÓBNĄ</button>
+                    </div>
+                </div>
+            </nav>
             <div className='bmw-fluid-container'>
                 <div className='bmw-slider__pagination'></div>
                 <div className='bmw-header__top-content'>
                     <nav className='top-content__nav bmw-row'>
                         <ul className='nav__menu'>
-                            <li><a href='#bmw-main-content'>Nowe BMW iX</a></li>
-                            <li><a href='#bmw-test-drive-form'>Umów jazdę próbną</a></li>
+                            <li className='menu__item-mobile'><MenuHamburger className='menu__hamburger' onClick={() => setMenuActive(!menuActive) } /></li>
+                            <li className='menu__item'><a href='#bmw-main-content'>Nowe BMW iX</a></li>
+                            <li className='menu__item'><a href='#bmw-test-drive-form'>Umów jazdę próbną</a></li>
                         </ul>
                         <a className='nav__website-logo' href='.'><BmwLogotype /></a>
                     </nav>

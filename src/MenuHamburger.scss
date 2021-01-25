@@ -1,0 +1,36 @@
+@import '_variables.scss';
+
+.menu-hamburger {
+    width: 30px;
+    cursor: pointer;
+
+    .menu-hamburger__line {
+        width: 100%;
+        height: 2px;
+        background-color: white;
+        @include transition(0.3s);
+
+        &:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+
+    &.active {
+        .menu-hamburger__line:first-child, .menu-hamburger__line:last-child {
+            width: 34px; 
+            transform-origin: 0 center;
+        }
+
+        .menu-hamburger__line:first-child {
+            transform: rotateZ(36deg);
+        }
+
+        .menu-hamburger__line:last-child {
+            transform: rotateZ(-36deg);
+        }
+
+        .menu-hamburger__line:nth-child(2) {
+            opacity: 0;
+        }
+    }
+}

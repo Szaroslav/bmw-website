@@ -23,12 +23,11 @@
     .footer-sm {
         display: flex;
         padding: 36px 0;
-        justify-content: end;
         align-items: center;
         border-bottom: 1px solid #bebebe;
 
         h4 {
-            margin: 0;
+            margin: 0 0 0 auto;
         }
 
         ul {
@@ -81,7 +80,7 @@
 
     .footer-navigation {
         display: flex;
-        padding: 96px;
+        padding: 96px 0;
 
         div {
             flex: 1 1 auto;
