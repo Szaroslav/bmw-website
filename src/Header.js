@@ -10,42 +10,42 @@ import { ReactComponent as BmwIxLogotype } from './assets/bmw/bmw-ix-logotype.sv
 
 SwiperCore.use([ Pagination, Autoplay ]);
 
-const Header = (props) => {
+const Header = () => {
     return (
-        <header className={props.name + '-header'}>
+        <header className='bmw-header'>
             <Swiper 
-                className='swiper-no-swiping'
+                className='bmw-slider swiper-no-swiping'
                 speed={600}
-                pagination={{ el: '.header-slider-pagination', clickable: true, renderCustom: (swiper, current, total) => current + 'of' + total }}
+                pagination={{ el: '.bmw-slider__pagination', clickable: true, renderCustom: (swiper, current, total) => current + 'of' + total }}
                 autoplay={{ delay: 8000, disableOnInteraction: false }}
             >
-                <div className='bmw-header-slider-grad'></div>
-                <SwiperSlide />
-                <SwiperSlide></SwiperSlide>
-                <SwiperSlide></SwiperSlide>
+                <div className='bmw-slider__bg-grad'></div>
+                <SwiperSlide className='bmw-slider__slide-1' />
+                <SwiperSlide className='bmw-slider__slide-3' />
+                <SwiperSlide className='bmw-slider__slide-2' />
             </Swiper>  
             <div className='bmw-fluid-container'>
-                <div className='header-slider-pagination'></div>
-                <div className='bmw-header-top-content'>
-                    <nav className={props.name + '-header-nav bmw-row'}>
-                        <ul>
+                <div className='bmw-slider__pagination'></div>
+                <div className='bmw-header__top-content'>
+                    <nav className='top-content__nav bmw-row'>
+                        <ul className='nav__menu'>
                             <li><a href='#bmw-main-content'>Nowe BMW iX</a></li>
                             <li><a href='#bmw-test-drive-form'>Umów jazdę próbną</a></li>
                         </ul>
-                        <a href='.'><BmwLogotype /></a>
+                        <a className='nav__website-logo' href='.'><BmwLogotype /></a>
                     </nav>
                     <div className='bmw-row'>
-                        <p className='bmw-paragraph'><b>Radość</b> z jazdy</p>
+                        <p className='bmw-header__slogan'><b>Radość</b> z jazdy</p>
                     </div>
                 </div>
-                <div className={props.name + '-header-content'}>
-                    <div className='bmw-header-heading'>
+                <div className='bmw-header__content'>
+                    <div className='content__heading'>
                         <BmwIxLogotype />
-                        <h2>NOWE BMW iX</h2>
-                        <p>PIONIER NOWEJ ERY</p>
+                        <h2 className='heading__caption'>NOWE BMW iX</h2>
+                        <p className='heading__text'>PIONIER NOWEJ ERY</p>
                     </div>
-                    <div className='bmw-header-button-wrapper'>
-                        <button className='bmw-default-btn'>UMÓW JAZDĘ PRÓBNĄ</button>
+                    <div className='content__button-wrapper'>
+                        <button className='content__td-button bmw-default-btn'>UMÓW JAZDĘ PRÓBNĄ</button>
                     </div>
                 </div>
             </div>    
