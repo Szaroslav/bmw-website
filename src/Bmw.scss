@@ -25,3 +25,25 @@ $fluid-irr-width:       82.5%;
         }
     }
 }
+
+.bwm-text-1 {
+    font: 700 36px $primary-font, sans-serif;
+    color: black;
+
+    @media screen and (max-width: $s-device) {
+        & {
+            font-size: 24px;
+        }
+    }
+}
+
+.bwm-text-2 {
+    font: 300 20px $secondary-font, sans-serif;
+    color: #707070;
+
+    @media screen and (max-width: $s-device) {
+        & {
+            font-size: 16px;
+        }
+    }
+}

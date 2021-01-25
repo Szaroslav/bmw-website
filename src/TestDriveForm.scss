@@ -1,21 +1,11 @@
 @import '_variables.scss';
 
-.bmw-test-drive-form {
-    padding: 190px;
+.bmw-td-form {
+    padding: 190px 0;
     position: relative;
-
-    h3 {
-        font-size: 36px;
-        font-weight: 700;
-    }
 
     sup {
         vertical-align: top;
-    }
-    
-    p {
-        font: 300 20px $secondary-font, sans-serif;
-        color: #707070;
     }
 
     form {
@@ -32,15 +22,22 @@
         }
     }
 
-    input[type=text] {
+    .form__input-t {
         width: 75%;
         padding: 10px 20px;
         font: 14px $secondary-font, sans-serif;
         color: $text-dark;
         border: 1px solid rgba(112, 112, 112, .25);
+        box-sizing: border-box;
+
+        @media screen and (max-width: $s-device) {
+            & {
+                width: 100%;
+            }
+        }
     }
 
-    .bmw-test-drive-bg {
+    .bmw-td-form__bg {
         width: 100%;
         height: 100%;
         position: absolute;
@@ -71,7 +68,13 @@
         }
     }
 
-    .bmw-test-drive-wrapper {
+    .bmw-fluid-container {
+        @media screen and (min-width: $s-device + 1px) {
+            width: 100%;
+        }
+    }
+
+    .bmw-td-form__form {
         width: 812px;
         margin: 0 auto;
         padding: 90px;
@@ -80,5 +83,16 @@
         z-index: 1;
         box-shadow: 3px 3px 60px rgba(0, 0, 0, .07);
         box-sizing: border-box;
+
+        @media screen and (max-width: $m-device) {
+            width: 80%;
+        }
+
+        @media screen and (max-width: $s-device) {
+            width: 100%;
+            padding: 0;
+            background-color: transparent;
+            box-shadow: none;
+        }
     }
 }
