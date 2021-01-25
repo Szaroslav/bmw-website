@@ -116,7 +116,7 @@ $navigation-line-size: 2px;
                 a {
                     display: inline-block;
                     padding: 30px 0;
-                    font: 600 16px $primary-font, sans-serif;
+                    font: 600 16px $font-primary, sans-serif;
                     color: $white;
 
                     &:visited {
@@ -147,7 +147,7 @@ $navigation-line-size: 2px;
 
         .bmw-header__slogan {
             margin: 8px 70px 0 auto;
-            font: 16px $primary-font;
+            font: 16px $font-primary;
 
             @media screen and (max-width: $s-device) {
                 & {
@@ -191,7 +191,7 @@ $navigation-line-size: 2px;
     
                     a {
                         display: inline-block;
-                        font: 700 18px $primary-font, sans-serif;
+                        font: 700 18px $font-primary, sans-serif;
                         position: relative;
 
                         &::before {

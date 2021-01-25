@@ -23,7 +23,7 @@ $line-size:         1px;
         }
     
         .bmw-list-heading {
-            font: 700 13px $primary-font, sans-serif;
+            font: 700 13px $font-primary, sans-serif;
             color: black;
             border-bottom: $line-size solid rgba(112, 112, 112, .25);
             box-sizing: content-box;
@@ -44,7 +44,7 @@ $line-size:         1px;
     
         .bmw-list-content {
             padding-top: 30px;
-            font: 400 14px $secondary-font, sans-serif;
+            font: 400 14px $font-secondary, sans-serif;
             color: $text-dark;
         }  
     }
