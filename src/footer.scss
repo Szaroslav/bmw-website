@@ -20,19 +20,35 @@
         color: $grey;
     }
 
-    .footer-sm {
+    .bmw-footer__main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .bmw-footer__sm {
         display: flex;
         padding: 36px 0;
         align-items: center;
+        justify-content: flex-end;
         border-bottom: 1px solid #bebebe;
 
-        h4 {
-            margin: 0 0 0 auto;
+        @media screen and (max-width: $s-device) {
+            & {
+                flex-direction: column;
+                align-items: flex-start;
+                padding: 90px 0;
+            }
         }
 
         ul {
             height: 40px;
             margin-left: 30px;
+
+            @media screen and (max-width: $s-device) {
+                & {
+                    margin-left: 0;
+                }
+            }
 
             li {
                 display: inline-block;
@@ -78,12 +94,25 @@
         }
     }
 
-    .footer-navigation {
+    .bmw-footer__nav {
         display: flex;
         padding: 96px 0;
 
+        @media screen and (max-width: $s-device) {
+            & {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+
         div {
             flex: 1 1 auto;
+
+            @media screen and (max-width: $s-device) {
+                &:not(:last-child) {
+                    margin-bottom: 60px;
+                }
+            }
         }
 
         h4 {
@@ -103,7 +132,7 @@
         }
     }
 
-    .footer-copyright {
+    .bmw-footer__copyright {
         padding: 20px 0;
         background-color: white;
 
@@ -111,6 +140,12 @@
             margin: 0;
             font: 14px $font-tertiary, sans-serif;
             color: $text-dark;
-        }
+
+            @media screen and (max-width: $s-device) {
+                & {
+                    text-align: center;
+                }
+            }
+        } 
     }
 }

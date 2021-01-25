@@ -1,5 +1,6 @@
 import React from 'react';
 import './Footer.scss';
+
 import { ReactComponent as FacebookLogotype } from './assets/sm/facebook-logotype.svg';
 import { ReactComponent as InstagramLogotype } from './assets/sm/instagram-logotype.svg';
 import { ReactComponent as YoutubeLogotype } from './assets/sm/youtube-logotype.svg';
@@ -9,8 +10,8 @@ import { ReactComponent as TwitterLogotype } from './assets/sm/twitter-logotype.
 const Footer = () => {
     return (
         <footer className='bmw-footer'>
-            <div className='bmw-fluid-container'>
-                <div className='bmw-row footer-sm'>
+            <div className='bmw-footer__main bmw-fluid-container'>
+                <div className='bmw-row bmw-footer__sm'>
                     <h4>Dołącz do nas</h4>
                     <ul>
                         <li className='sm-facebook'>
@@ -40,7 +41,7 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <nav className='bmw-row footer-navigation'>
+                <nav className='bmw-row bmw-footer__nav'>
                     <div>
                         <h4>Strefa klienta</h4>
                         <ul>
@@ -69,7 +70,7 @@ const Footer = () => {
                     </div>
                 </nav>
             </div>
-            <div className='footer-copyright'>
+            <div className='bmw-footer__copyright'>
                 <div className='bmw-fluid-container'>
                     <p>&copy; BMW Polska 2020</p>
                 </div>
