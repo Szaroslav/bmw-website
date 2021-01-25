@@ -35,8 +35,16 @@ $navigation-line-size: 2px;
             width: 100%;
         }
 
-        .swiper-slide {
+        .swiper-slide:nth-child(1) {
             background: no-repeat center/cover url('./assets/slider/slider-header-1.jpg')
+        }
+
+        .swiper-slide:nth-child(2) {
+            background: no-repeat center/cover url('./assets/slider/slider-header-2.jpg')
+        }
+
+        .swiper-slide:nth-child(3) {
+            background: no-repeat center/cover url('./assets/slider/slider-header-3.jpg')
         }
     }
 
@@ -156,7 +164,7 @@ $navigation-line-size: 2px;
         }
         
         .bmw-header-heading {
-            padding: 79px 0;
+            padding: 190px 0;
         }
 
         .bmw-header-button-wrapper {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
-import SwiperCore, { Pagination } from 'swiper';
+import SwiperCore, { Pagination, Autoplay } from 'swiper';
 
 import './Header.scss';
 import 'swiper/swiper.scss';
@@ -8,14 +8,16 @@ import 'swiper/swiper.scss';
 import { ReactComponent as BmwLogotype } from './assets/bmw/bmw-logotype.svg';
 import { ReactComponent as BmwIxLogotype } from './assets/bmw/bmw-ix-logotype.svg';
 
-SwiperCore.use([ Pagination ]);
+SwiperCore.use([ Pagination, Autoplay ]);
 
 const Header = (props) => {
     return (
         <header className={props.name + '-header'}>
             <Swiper 
                 className='swiper-no-swiping'
+                speed={600}
                 pagination={{ el: '.header-slider-pagination', clickable: true, renderCustom: (swiper, current, total) => current + 'of' + total }}
+                autoplay={{ delay: 8000 }}
             >
                 <div className='bmw-header-slider-grad'></div>
                 <SwiperSlide />
