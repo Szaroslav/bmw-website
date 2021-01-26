@@ -22,9 +22,9 @@ const MobileMenu = ({ className, toggleMenu }) => {
                     
                 </div>
                 <ul className='mobile-nav__menu'>
-                    <li className='menu__item'><a href='#bmw-main-content'>NOWE BMW iX</a></li>
-                    <li className='menu__item'><a href='#bmw-test-drive-form'>INNOWACYJNA AERODYNAMIKA</a></li>
-                    <li className='menu__item'><a href='#bmw-test-drive-form'>GALERIA</a></li>
+                    <li className='menu__item'><a href='.'>NOWE BMW iX</a></li>
+                    <li className='menu__item'><a href='.'>INNOWACYJNA AERODYNAMIKA</a></li>
+                    <li className='menu__item'><a href='.'>GALERIA</a></li>
                 </ul>
                 <div className='content__button-wrapper'>
                     <button className='content__td-button bmw-default-btn'>UMÓW JAZDĘ PRÓBNĄ</button>
