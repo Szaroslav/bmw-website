@@ -1,4 +1,4 @@
-@import '_variables.scss';
+@import '../_variables.scss';
 
 $gallery-item-gap:  10px;
 
@@ -41,7 +41,7 @@ $gallery-item-gap:  10px;
         }
 
         .bmw-gallery__img{
-            background: no-repeat center/cover url('./assets/gallery/bmw-ix-preview-1.jpg');
+            background: no-repeat center/cover url('../assets/gallery/bmw-ix-preview-1.jpg');
         }
     }
 
@@ -55,7 +55,7 @@ $gallery-item-gap:  10px;
         }
 
         .bmw-gallery__img {
-            background: no-repeat center/cover url('./assets/gallery/bmw-ix-preview-2.jpg');
+            background: no-repeat center/cover url('../assets/gallery/bmw-ix-preview-2.jpg');
         }
     }
 
@@ -69,7 +69,7 @@ $gallery-item-gap:  10px;
         }
 
         .bmw-gallery__img {
-            background: no-repeat center/cover url('./assets/gallery/bmw-ix-preview-3.jpg');
+            background: no-repeat center/cover url('../assets/gallery/bmw-ix-preview-3.jpg');
         }
     }
 
@@ -83,7 +83,7 @@ $gallery-item-gap:  10px;
         }
 
         .bmw-gallery__img {
-            background: no-repeat center/cover url('./assets/gallery/bmw-ix-preview-4.jpg');
+            background: no-repeat center/cover url('../assets/gallery/bmw-ix-preview-4.jpg');
         }
     }
 
@@ -97,7 +97,7 @@ $gallery-item-gap:  10px;
         }
 
         .bmw-gallery__img {
-            background: no-repeat center/cover url('./assets/gallery/bmw-ix-preview-5.jpg');
+            background: no-repeat center/cover url('../assets/gallery/bmw-ix-preview-5.jpg');
         }
     }
 }

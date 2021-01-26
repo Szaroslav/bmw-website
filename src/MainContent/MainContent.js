@@ -1,8 +1,8 @@
 import React from 'react';
 import List from './List.js';
 import './MainContent.scss';
-import { ReactComponent as BmwIcon1 } from './assets/bmw/main-content-icon-1.svg';
-import { ReactComponent as BmwIcon2 } from './assets/bmw/main-content-icon-2.svg';
+import { ReactComponent as BmwIcon1 } from '../assets/bmw/main-content-icon-1.svg';
+import { ReactComponent as BmwIcon2 } from '../assets/bmw/main-content-icon-2.svg';
 
 const MainContent = () => {
     const listData = [
@@ -18,10 +18,21 @@ const MainContent = () => {
                 <section className='bmw-main-content__section section--1 bmw-fluid-container irregular-right'>
                     <div className='section__photos-container'>
                         <div className='bmw-row' style={{ alignSelf: 'end' }}>
-                            <img className='photos-container__img' src='./assets/bmw-ix-preview-1.jpg' alt='bmw-ix-preview' style={{ marginTop: '0' }} />
+                            <img 
+                                className='photos-container__img'
+                                src='./assets/bmw-ix-preview-1.jpg'
+                                srcSet='./assets/bmw-ix-preview-1.jpg 2x'
+                                alt='bmw-ix-preview'
+                                style={{ marginTop: '0' }} 
+                            />
                         </div>
                         <div className='bmw-row' style={{ paddingLeft: '16px' }}>
-                            <img className='photos-container__img' src='./assets/bmw-ix-preview-2.jpg' alt='bmw-ix-preview' />
+                            <img 
+                                className='photos-container__img'
+                                src='./assets/bmw-ix-preview-2.jpg'
+                                srcSet='./assets/bmw-ix-preview-2.jpg 2x'
+                                alt='bmw-ix-preview' 
+                            />
                         </div>
                     </div>
                     <div className='section__content'>
@@ -47,10 +58,20 @@ const MainContent = () => {
                     </div>
                     <div className='section__photos-container'>
                         <div className='bmw-row' style={{ paddingRight: '16px' }}>
-                            <img className='photos-container__img' src='./assets/bmw-ix-preview-3.jpg' alt='bmw-ix-preview' />
+                            <img
+                                className='photos-container__img'
+                                src='./assets/bmw-ix-preview-3.jpg'
+                                srcSet='./assets/bmw-ix-preview-3.jpg 2x'
+                                alt='bmw-ix-preview'
+                            />
                         </div>
                         <div className='bmw-row' style={{ alignSelf: 'baseline' }}>
-                            <img className='photos-container__img' src='./assets/bmw-ix-preview-4.jpg' alt='bmw-ix-preview' />
+                            <img
+                                className='photos-container__img'
+                                src='./assets/bmw-ix-preview-4.jpg'
+                                srcSet='./assets/bmw-ix-preview-4.jpg 2x'
+                                alt='bmw-ix-preview'
+                            />
                         </div>
                     </div>
                 </section>      

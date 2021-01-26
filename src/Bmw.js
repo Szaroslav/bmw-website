@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from './Header.js';
-import MainContent from './MainContent.js';
-import Gallery from './Gallery.js';
-import TestDriveForm from './TestDriveForm.js';
-import Footer from './Footer.js';
+import Header from './Header/Header.js';
+import MainContent from './MainContent/MainContent.js';
+import Gallery from './Gallery/Gallery.js';
+import TestDriveForm from './TestDriveForm/TestDriveForm.js';
+import Footer from './Footer/Footer.js';
 import ScrollAnimation from 'react-animate-on-scroll';
 import './Bmw.scss';
 import './form.scss';

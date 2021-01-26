@@ -1,7 +1,7 @@
 import React from 'react';
 import './MobileMenu.scss';
-import { ReactComponent as BmwLogotype } from './assets/bmw/bmw-logotype.svg';
-import { ReactComponent as CloseIcon } from './assets/icons/close-icon.svg';
+import { ReactComponent as BmwLogotype } from '../assets/bmw/bmw-logotype.svg';
+import { ReactComponent as CloseIcon } from '../assets/icons/close-icon.svg';
 
 const MobileMenu = ({ className, toggleMenu }) => {
     const cn = className !== '' ? `mobile-nav ${className}` : 'mobile-nav';

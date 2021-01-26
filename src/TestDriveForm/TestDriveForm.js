@@ -15,12 +15,42 @@ const TestDriveForm = () => {
                 </div>
             </div>
             <div className='bmw-td-form__bg'>
-                <img className='bg__img-1' src='./assets/test-drive/bmw-ix-l.png' alt='bmw-ix-l' />
-                <img className='bg__img-2' src='./assets/test-drive/bmw-ix-r.png' alt='bmw-ix-r' />
-                <img className='bg__img-3' src='./assets/test-drive/triangle-4.png' alt='triangle-4' />
-                <img className='bg__img-4' src='./assets/test-drive/triangle-2.png' alt='triangle-2' />
-                <img className='bg__img-5' src='./assets/test-drive/triangle-3.png' alt='triangle-3' />
-                <img className='bg__img-6' src='./assets/test-drive/triangle-1.png' alt='triangle-1' />
+                <img
+                    className='bg__img-1'
+                    src='./assets/test-drive/bmw-ix-l.png'
+                    srcset='./assets/test-drive/bmw-ix-l.png 2x'
+                    alt='bmw-ix-l' 
+                />
+                <img
+                    className='bg__img-2'
+                    src='./assets/test-drive/bmw-ix-r.png'
+                    srcset='./assets/test-drive/bmw-ix-r.png 2x'
+                    alt='bmw-ix-r' 
+                />
+                <img
+                    className='bg__img-3'
+                    src='./assets/test-drive/triangle-1.png'
+                    srcset='./assets/test-drive/triangle-1.png 2x'
+                    alt='triangle-1'
+                />
+                <img
+                    className='bg__img-4'
+                    src='./assets/test-drive/triangle-2.png'
+                    srcset='./assets/test-drive/triangle-2.png 2x'
+                    alt='triangle-2'
+                />
+                <img
+                    className='bg__img-5'
+                    src='./assets/test-drive/triangle-3.png'
+                    srcset='./assets/test-drive/triangle-3.png 2x'
+                    alt='triangle-3'
+                />
+                <img
+                    className='bg__img-6'
+                    src='./assets/test-drive/triangle-4.png'
+                    srcset='./assets/test-drive/triangle-4.png 2x'
+                    alt='triangle-4' 
+                />
             </div>
             <div className='bmw-fluid-container'>
                 <div className='bmw-td-form__form-container'>

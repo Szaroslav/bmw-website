@@ -6,9 +6,9 @@ import SwiperCore, { Pagination, Autoplay } from 'swiper';
 import './Header.scss';
 import 'swiper/swiper.scss';
 
-import { ReactComponent as BmwLogotype } from './assets/bmw/bmw-logotype.svg';
-import { ReactComponent as BmwIxLogotype } from './assets/bmw/bmw-ix-logotype.svg';
-import { ReactComponent as MenuIcon } from './assets/icons/menu-ham-icon.svg';
+import { ReactComponent as BmwLogotype } from '../assets/bmw/bmw-logotype.svg';
+import { ReactComponent as BmwIxLogotype } from '../assets/bmw/bmw-ix-logotype.svg';
+import { ReactComponent as MenuIcon } from '../assets/icons/menu-ham-icon.svg';
 
 SwiperCore.use([ Pagination, Autoplay ]);
 
