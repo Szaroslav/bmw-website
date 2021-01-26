@@ -63,15 +63,21 @@ button, button:focus {
     line-height: 104%;
 }
 
+/* * * * * Cairo SemiBold 20px * * * * */
+.bmw-text-8 {
+    font: 600 1.25rem $font-primary, sans-serif;
+    color: black;
+}
+
 /* * * * * Open Sans Light 20px * * * * */
 .bmw-text-2 {
     font: 300 1.25rem $font-secondary, sans-serif;
     color: $grey;
 }
 
-/* * * * * Roboto Light 20px * * * * */
+/* * * * * Roboto Light 14px * * * * */
 .bmw-text-3 {
-    font: .875rem $font-secondary, sans-serif;
+    font: 300 .875rem $font-secondary, sans-serif;
     color: $text-dark;
 
     @media screen and (max-width: $s-device) {
@@ -81,9 +87,9 @@ button, button:focus {
     }
 }
 
-/* * * * * Roboto Regular 20px * * * * */
+/* * * * * Roboto Light 20px * * * * */
 .bmw-text-4 {
-    font: 20px $font-tertiary, sans-serif;
+    font: 300 20px $font-tertiary, sans-serif;
     color: $grey;
 }
 
@@ -103,4 +109,10 @@ button, button:focus {
 .bmw-text-6 {
     font: .875rem $font-secondary, sans-serif;
     color: $text-dark;
+}
+
+/* * * * * Open Sans Regular 20px * * * * */
+.bmw-text-7 {
+    font: 1.25rem $font-secondary, sans-serif;
+    color: $grey;
 }

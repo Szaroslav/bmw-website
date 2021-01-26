@@ -131,8 +131,6 @@
 
         p {
             margin: 0;
-            font: 14px $font-tertiary, sans-serif;
-            color: $text-dark;
 
             @media screen and (max-width: $s-device) {
                 & {

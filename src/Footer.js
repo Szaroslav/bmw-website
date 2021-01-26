@@ -72,7 +72,7 @@ const Footer = () => {
             </div>
             <div className='bmw-footer__copyright'>
                 <div className='bmw-fluid-container'>
-                    <p>&copy; BMW Polska 2020</p>
+                    <p className='bmw-text-6'>&copy; BMW Polska 2020</p>
                 </div>
             </div>
         </footer>
