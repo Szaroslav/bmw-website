@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import MenuHamburger from './MenuHamburger.js';
 import MobileMenu from './MobileMenu.js';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import SwiperCore, { Pagination, Autoplay } from 'swiper';

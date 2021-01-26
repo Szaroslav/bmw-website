@@ -26,6 +26,11 @@ $line-size:     1px;
         @media screen and (max-width: $m-device) {
             & {
                 flex-basis: calc((100% - (#{$md-cols} - 1) * #{$gap}) / #{$md-cols});
+                padding: 0 0 30px 0;
+            }
+
+            &:last-child {
+                padding-bottom: 80px;
             }
 
             &:not(:nth-child(#{$md-cols}n)) {
@@ -37,6 +42,10 @@ $line-size:     1px;
             & {
                 flex-basis: 100%;
                 margin-right: 0;
+            }
+
+            &:not(:nth-last-child(-n + #{$sd-cols})) {
+                padding: 0 0 30px 0;
             }
         }
 
