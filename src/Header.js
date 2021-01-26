@@ -40,8 +40,8 @@ const Header = () => {
                                     <MenuIcon className='menu__hamburger' />
                                 </button>
                             </li>
-                            <li className='menu__item'><a href='#bmw-main-content'>Nowe BMW iX</a></li>
-                            <li className='menu__item'><a href='#bmw-test-drive-form'>Umów jazdę próbną</a></li>
+                            <li className='menu__item'><a href='.'>Nowe BMW iX</a></li>
+                            <li className='menu__item'><a href='.'>Umów jazdę próbną</a></li>
                         </ul>
                         <a className='nav__website-logo' href='.'><BmwLogotype /></a>
                     </nav>

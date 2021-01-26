@@ -1,9 +1,19 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './TestDriveForm.scss';
 
 const TestDriveForm = () => {
+    const [ isSent, setIsSent ] = useState(false);
+    const tyActive = isSent ? ' active' : '';
+
     return (
         <section id='bmw-td-form' className='bmw-td-form'>
+            <div className={`bmw-td-form__ty-wrapper${tyActive}`}>
+                <div className='bmw-td-form__ty-container'>
+                    <h4 className='ty-container__thank-you'>DZIĘKUJEMY</h4>
+                    <p className='ty-container__contact'>Skontaktujemy się z Tobą w najbliższym możliwym terminie.</p>
+                    <button className='ty-container__ok-btn bmw-default-btn' onClick={() => setIsSent(!isSent) }>OK</button>
+                </div>
+            </div>
             <div className='bmw-td-form__bg'>
                 <img className='bg__img-1' src='./assets/test-drive/bmw-ix-l.png' alt='bmw-ix-l' />
                 <img className='bg__img-2' src='./assets/test-drive/bmw-ix-r.png' alt='bmw-ix-r' />
@@ -45,7 +55,7 @@ const TestDriveForm = () => {
                                 <input className='form__input-t bmw-text-6' type='text' name='phone_number' placeholder='Numer telefonu*' required />
                             </li>
                             <li className='list__item'>
-                                <input className='bmw-default-btn' type='submit' value='WYŚLIJ' />
+                                <input className='bmw-default-btn' type='button' value='WYŚLIJ' onClick={() => setIsSent(!isSent) } />
                             </li>
                         </ul>
                     </form>

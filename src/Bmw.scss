@@ -15,6 +15,11 @@ button, button:focus, input, input:focus {
 
 .bmw-website {
     position: relative;
+
+    .bmw-website__1 {
+        position: relative;
+        z-index: 5;
+    }
 }
 
 .bmw-fluid-container {

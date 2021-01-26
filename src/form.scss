@@ -12,6 +12,7 @@ button, input[type=submit] {
     background-color: $primary-blue;
     border: none;
     border-radius: 0;
+    cursor: pointer;
     @include transition(.2s ease-out);
 
     &:hover {
