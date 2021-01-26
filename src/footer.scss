@@ -15,11 +15,6 @@
         list-style-type: none;
     }
 
-    h4 {
-        font: 300 20px $font-tertiary, sans-serif;
-        color: $grey;
-    }
-
     .bmw-footer__main {
         display: flex;
         flex-direction: column;
@@ -124,8 +119,6 @@
         }
 
         a {
-            font: 700 14px $font-tertiary, sans-serif;
-
             &:hover {
                 text-decoration: underline;
             }

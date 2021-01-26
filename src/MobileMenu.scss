@@ -9,11 +9,19 @@
     left: 0;
     top: 0;
     z-index: 4;
+    transform: translateX(-100%);
     touch-action: none;
     -ms-touch-action: none;
+    @include transition(.33s ease-out);
+
+    @media screen and (max-width: $s-device) {
+        & {
+            display: flex;
+        }
+    }
 
     &.active {
-        display: flex;
+        transform: translateX(0);
     }
 
     .bmw-fluid-container {

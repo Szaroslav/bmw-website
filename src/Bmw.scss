@@ -9,6 +9,10 @@ $fluid-irr-width:       82.5%;
     }
 }
 
+button, button:focus {
+    outline: none;
+}
+
 .bmw-website {
     position: relative;
 }
@@ -52,18 +56,51 @@ $fluid-irr-width:       82.5%;
     }
 }
 
+/* * * * * Cairo Bold 36 px * * * * */
 .bmw-text-1 {
     font: 700 2.25rem $font-primary, sans-serif;
     color: black;
     line-height: 104%;
 }
 
+/* * * * * Open Sans Light 20px * * * * */
 .bmw-text-2 {
     font: 300 1.25rem $font-secondary, sans-serif;
     color: $grey;
 }
 
+/* * * * * Roboto Light 20px * * * * */
 .bmw-text-3 {
-    font: .875rem $font-tertiary, sans-serif;
+    font: .875rem $font-secondary, sans-serif;
+    color: $text-dark;
+
+    @media screen and (max-width: $s-device) {
+        & {
+            font-size: 1.083rem;
+        }
+    }
+}
+
+/* * * * * Roboto Regular 20px * * * * */
+.bmw-text-4 {
+    font: 20px $font-tertiary, sans-serif;
+    color: $grey;
+}
+
+/* * * * * Roboto Bold / Medium 14px * * * * */
+.bmw-text-5 {
+    font: 700 .875rem $font-tertiary, sans-serif;
+    color: $grey;
+
+    @media screen and (max-width: $s-device) {
+        & {
+            font-weight: 500;
+        }
+    }
+}
+
+/* * * * * Open Sans Regular 14px * * * * */
+.bmw-text-6 {
+    font: .875rem $font-secondary, sans-serif;
     color: $text-dark;
 }

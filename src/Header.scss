@@ -32,15 +32,25 @@ $navigation-line-size: 2px;
         }
 
         .bmw-slider__slide-1 {
-            background: no-repeat center/cover url('./assets/slider/slider-header-1.jpg')
+            background: no-repeat center/cover url('./assets/slider/slider-header-1.jpg');
         }
 
         .bmw-slider__slide-2 {
-            background: no-repeat center/cover url('./assets/slider/slider-header-2.jpg')
+            background: no-repeat center/cover url('./assets/slider/slider-header-2.jpg');
         }
 
         .bmw-slider__slide-3 {
-            background: no-repeat center/cover url('./assets/slider/slider-header-3.jpg')
+            background: no-repeat center/cover url('./assets/slider/slider-header-3.jpg');
+        }
+
+        @media screen and (max-width: $s-device) {
+            .bmw-slider__slide-1 {
+                background-position: 70% center;
+            }
+    
+            .bmw-slider__slide-2 {
+                background-position: 30% center;
+            }
         }
     }
 

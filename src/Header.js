@@ -27,8 +27,8 @@ const Header = () => {
             >
                 <div className='bmw-slider__bg-grad'></div>
                 <SwiperSlide className='bmw-slider__slide-1' />
-                <SwiperSlide className='bmw-slider__slide-3' />
                 <SwiperSlide className='bmw-slider__slide-2' />
+                <SwiperSlide className='bmw-slider__slide-3' />
             </Swiper>
             <MobileMenu className={menuClassName} toggleMenu={() => setMenuActive(!menuActive)} />
             <div className='bmw-fluid-container'>

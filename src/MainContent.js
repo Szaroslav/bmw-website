@@ -47,10 +47,10 @@ const MainContent = () => {
                     </div>
                     <div className='section__photos-container'>
                         <div className='bmw-row' style={{ paddingRight: '16px' }}>
-                            <img src='./assets/bmw-ix-preview-3.jpg' alt='bmw-ix-preview' />
+                            <img className='photos-container__img' src='./assets/bmw-ix-preview-3.jpg' alt='bmw-ix-preview' />
                         </div>
                         <div className='bmw-row' style={{ alignSelf: 'baseline' }}>
-                            <img src='./assets/bmw-ix-preview-4.jpg' alt='bmw-ix-preview' />
+                            <img className='photos-container__img' src='./assets/bmw-ix-preview-4.jpg' alt='bmw-ix-preview' />
                         </div>
                     </div>
                 </section>      

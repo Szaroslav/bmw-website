@@ -12,7 +12,7 @@ const Footer = () => {
         <footer className='bmw-footer'>
             <div className='bmw-footer__main bmw-fluid-container'>
                 <div className='bmw-row bmw-footer__sm'>
-                    <h4>Dołącz do nas</h4>
+                    <h4 className='bmw-text-4'>Dołącz do nas</h4>
                     <ul>
                         <li className='sm-facebook'>
                             <a href='https://www.facebook.com/BMW/' target='_blank' rel='noopener noreferrer'>
@@ -43,29 +43,29 @@ const Footer = () => {
                 </div>
                 <nav className='bmw-row bmw-footer__nav'>
                     <div>
-                        <h4>Strefa klienta</h4>
+                        <h4 className='bmw-text-4'>Strefa klienta</h4>
                         <ul>
-                            <li><a href='.'>Centrum Obsługi Klienta BMW</a></li>
-                            <li><a href='.'>Znajdź dealera BMW</a></li>
-                            <li><a href='.'>Pobierz cenniki / broszury</a></li>
-                            <li><a href='.'>Często zadawane pytania</a></li>
+                            <li><a className='bmw-text-5' href='.'>Centrum Obsługi Klienta BMW</a></li>
+                            <li><a className='bmw-text-5' href='.'>Znajdź dealera BMW</a></li>
+                            <li><a className='bmw-text-5' href='.'>Pobierz cenniki / broszury</a></li>
+                            <li><a className='bmw-text-5' href='.'>Często zadawane pytania</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h4>Poznaj BMW</h4>
+                        <h4 className='bmw-text-4'>Poznaj BMW</h4>
                         <ul>
-                            <li><a href='.'>Informacje prasowe</a></li>
-                            <li><a href='.'>BMW Polska</a></li>
-                            <li><a href='.'>Kariera</a></li>
+                            <li><a className='bmw-text-5' href='.'>Informacje prasowe</a></li>
+                            <li><a className='bmw-text-5' href='.'>BMW Polska</a></li>
+                            <li><a className='bmw-text-5' href='.'>Kariera</a></li>
                         </ul>
                     </div>
                     <div>
-                        <h4>Informacje prawne</h4>
+                        <h4 className='bmw-text-4'>Informacje prawne</h4>
                         <ul>
-                            <li><a href='.'>Mapa serwisu</a></li>
-                            <li><a href='.'>Nota prawna / Prywatność</a></li>
-                            <li><a href='.'>Polityka cookies</a></li>
-                            <li><a href='.'>Warunki korzystania z MyBMW</a></li>
+                            <li><a className='bmw-text-5' href='.'>Mapa serwisu</a></li>
+                            <li><a className='bmw-text-5' href='.'>Nota prawna / Prywatność</a></li>
+                            <li><a className='bmw-text-5' href='.'>Polityka cookies</a></li>
+                            <li><a className='bmw-text-5' href='.'>Warunki korzystania z MyBMW</a></li>
                         </ul>
                     </div>
                 </nav>
