@@ -45,9 +45,18 @@ $navigation-line-size: 2px;
     }
 
     .bmw-slider__pagination {
+        width: 210px;
         position: absolute;
         bottom: 74px;
         z-index: 3;
+
+        @media screen and (max-width: $m-device) {
+            & {
+                bottom: 30px;
+                left: 50%;
+                transform: translateX(-50%);
+            }
+        }
 
         .swiper-pagination-bullet {
             display: inline-block;
@@ -75,54 +84,6 @@ $navigation-line-size: 2px;
 
             &.swiper-pagination-bullet-active::before, &:hover::before {
                 transform: scaleX(1);
-            }
-        }
-    }
-
-    .bmw-header__nav {
-        display: none;
-        width: 100%;
-        height: 100%;
-        background-color: black;
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 4;
-
-        &.active {
-            display: flex;
-        }
-
-        .bmw-fluid-container {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding-bottom: 64px;
-        }
-
-        .nav__menu-mobile {
-            width: 100%;
-            margin: auto 0;
-            padding: 0 32px;
-            list-style-type: none;
-
-            .menu-mobile__item {
-                text-align: center;
-
-                &:not(:last-child) {
-                    border-bottom: 1px solid #343434;
-                }
-
-                a {
-                    display: inline-block;
-                    padding: 30px 0;
-                    font: 600 16px $font-primary, sans-serif;
-                    color: $white;
-
-                    &:visited {
-                        text-decoration: none;
-                    }
-                }
             }
         }
     }
@@ -179,10 +140,6 @@ $navigation-line-size: 2px;
                         padding-right: 60px;
                     }
 
-                    &.mobile {
-                        display: none;
-                    }
-
                     @media screen and (max-width: $s-device) {
                         & {
                             display: none;
@@ -220,6 +177,24 @@ $navigation-line-size: 2px;
                         }
                     }
                 }
+
+                .item-mobile--ham {
+                    width: 30px;
+                    height: 38px;
+
+                    .item-mobile__btn {
+                        width: 100%;
+                        height: 22px;
+                        padding: 8px 0;
+                        background-color: transparent;
+                        border: none;
+                        box-sizing: content-box;
+
+                        .menu__hamburger {
+                            fill: white;
+                        }
+                    }
+                }
             }
 
             .nav__website-logo {
@@ -232,6 +207,12 @@ $navigation-line-size: 2px;
 
     .bmw-header__content {
         padding-bottom: 54px;
+
+        @media screen and (max-width: $m-device) {
+            & {
+                padding-bottom: 120px;
+            }
+        }
 
         h1, h2, h3, h4, h5, h6, p {
             margin: 0;

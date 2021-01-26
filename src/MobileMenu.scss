@@ -1,0 +1,89 @@
+@import '_variables.scss';
+
+.mobile-nav {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 4;
+    touch-action: none;
+    -ms-touch-action: none;
+
+    &.active {
+        display: flex;
+    }
+
+    .bmw-fluid-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 64px;
+    }
+
+    .mobile-nav__top-content {
+        width: 100%;
+        display: flex;
+        padding-top: 20px;
+
+        .top-content__line-container {
+            flex-grow: 1;
+            padding-top: 58px;
+
+            .line-container__line {
+                height: 1px;
+                background-color: #343434;
+            }
+        }
+
+        .top-content__side-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-left: 38px;
+        }
+
+
+        .side-container__close-btn {
+            width: 20px;
+            height: 20px;
+            padding: 10px;
+            background-color: transparent;
+            border: none;
+            box-sizing: content-box;
+    
+            .close-btn__icon {
+                fill: #858585;
+            }
+        }
+    }
+
+
+    .mobile-nav__menu {
+        width: 100%;
+        margin: auto 0;
+        padding: 0 32px;
+        list-style-type: none;
+
+        .menu__item {
+            text-align: center;
+
+            &:not(:last-child) {
+                border-bottom: 1px solid #343434;
+            }
+
+            a {
+                display: inline-block;
+                padding: 30px 0;
+                font: 600 16px $font-primary, sans-serif;
+                color: $white;
+
+                &:visited {
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

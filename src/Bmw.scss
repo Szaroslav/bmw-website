@@ -3,6 +3,16 @@
 $fluid-width:           75%;
 $fluid-irr-width:       82.5%;
 
+@media screen and (max-width: $s-device) {
+    html {
+        font-size: 75%;
+    }
+}
+
+.bmw-website {
+    position: relative;
+}
+
 .bmw-fluid-container {
     width: $fluid-width;
     margin: 0 auto;
@@ -19,6 +29,12 @@ $fluid-irr-width:       82.5%;
         margin: 0 ((100% - $fluid-width) / 2) 0 auto;
     }
 
+    @media screen and (max-width: $l-device) {
+        & {
+            width: 82.5%;
+        }
+    }
+
     @media screen and (max-width: $s-device) {
         & {
             width: 90%;
@@ -27,23 +43,11 @@ $fluid-irr-width:       82.5%;
 }
 
 .bwm-text-1 {
-    font: 700 36px $font-primary, sans-serif;
+    font: 700 2.25rem $font-primary, sans-serif;
     color: black;
-
-    @media screen and (max-width: $s-device) {
-        & {
-            font-size: 24px;
-        }
-    }
 }
 
 .bwm-text-2 {
-    font: 300 20px $font-secondary, sans-serif;
-    color: #707070;
-
-    @media screen and (max-width: $s-device) {
-        & {
-            font-size: 16px;
-        }
-    }
+    font: 300 1.25rem $font-secondary, sans-serif;
+    color: $grey;
 }

@@ -21,9 +21,9 @@ const TestDriveForm = () => {
                         <ul>
                             <li>
                                 <input type='radio' id='male' name='sex' value='male' required />
-                                <label for='male'>Pan</label>
+                                <label htmlFor='male'>Pan</label>
                                 <input type='radio' id='female' name='sex' value='female' required />
-                                <label for='female'>Pani</label>
+                                <label htmlFor='female'>Pani</label>
                             </li>
                             <li>
                                 <input className='form__input-t' type='text' name='firstname' placeholder='Imię*' required />
