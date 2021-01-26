@@ -15,27 +15,29 @@ const MainContent = () => {
 
     return (
         <main id='bmw-main-content' className='bmw-main-content'>
-                <section className='main-content-section-1 bmw-fluid-container irregular-right'>
-                    <div className='bmw-row' style={{ alignSelf: 'end' }}>
-                        <img src='./assets/bmw-ix-preview-1.jpg' alt='bmw-ix-preview' style={{ marginTop: '0' }} />
+                <section className='bmw-main-content__section section--1 bmw-fluid-container irregular-right'>
+                    <div className='section__photos-container'>
+                        <div className='bmw-row' style={{ alignSelf: 'end' }}>
+                            <img className='photos-container__img' src='./assets/bmw-ix-preview-1.jpg' alt='bmw-ix-preview' style={{ marginTop: '0' }} />
+                        </div>
+                        <div className='bmw-row' style={{ paddingLeft: '16px' }}>
+                            <img className='photos-container__img' src='./assets/bmw-ix-preview-2.jpg' alt='bmw-ix-preview' />
+                        </div>
                     </div>
-                    <div className='bmw-row' style={{ paddingLeft: '16px' }}>
-                        <img src='./assets/bmw-ix-preview-2.jpg' alt='bmw-ix-preview' />
-                    </div>
-                    <div className='bmw-row content' style={{ paddingLeft: '8%' }}>
+                    <div className='section__content'>
                         <BmwIcon1 />
-                        <h3>FAKTY O NOWYM BMW iX.</h3>
+                        <h3 className='bmw-text-1'>FAKTY<br />O NOWYM BMW iX.</h3>
                         <List data={listData} />
                     </div>
                 </section>
-                <section className='main-content-section-2 bmw-fluid-container irregular-left'> 
-                    <div className='bmw-row content' style={{ paddingRight: '8%' }}>
+                <section className='bmw-main-content__section section--2 bmw-fluid-container irregular-left'> 
+                    <div className='section__content'>
                         <BmwIcon2 />
-                        <h3>INNOWACYJNA AERODYNAMIKA BMW iX.</h3>
-                        <p>
+                        <h3 className='bmw-text-1'>INNOWACYJNA<br />AERODYNAMIKA<br />BMW iX.</h3>
+                        <p className='bmw-text-2'>
                             BMW iX w każdym milimetrze swojej dynamicznej stylistyki wdraża zasadę „forma podąża za funkcją”.
                         </p>
-                        <p>
+                        <p className='bmw-text-3'>
                             Widać to przede wszystkim po gładkiej karoserii ze zwężoną nadbudową kabiny i zredukowanymi fugami 
                             oraz po płaskim podwoziu. W połączeniu z zamkniętym przodem oraz dyfuzorem z tyłu i niezwykłymi detalami, 
                             takimi jak wpuszczane klamki czy zintegrowane z listwami szybowymi lusterka zewnętrzne, BMW iX osiąga 
@@ -43,11 +45,13 @@ const MainContent = () => {
                             z innowacyjną konstrukcją SAV-a.
                         </p>
                     </div>
-                    <div className='bmw-row' style={{ paddingRight: '16px' }}>
-                        <img src='./assets/bmw-ix-preview-3.jpg' alt='bmw-ix-preview' />
-                    </div>
-                    <div className='bmw-row' style={{ alignSelf: 'baseline' }}>
-                        <img src='./assets/bmw-ix-preview-4.jpg' alt='bmw-ix-preview' />
+                    <div className='section__photos-container'>
+                        <div className='bmw-row' style={{ paddingRight: '16px' }}>
+                            <img src='./assets/bmw-ix-preview-3.jpg' alt='bmw-ix-preview' />
+                        </div>
+                        <div className='bmw-row' style={{ alignSelf: 'baseline' }}>
+                            <img src='./assets/bmw-ix-preview-4.jpg' alt='bmw-ix-preview' />
+                        </div>
                     </div>
                 </section>      
         </main>

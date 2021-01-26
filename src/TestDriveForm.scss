@@ -4,8 +4,15 @@
     padding: 400px 0;
     position: relative;
 
-    sup {
-        vertical-align: top;
+    .bmw-text-1 {
+        position: relative;
+
+        sup {
+            font-size: 60%;
+            position: relative;
+            top: -0.33rem;
+            vertical-align: top;
+        }
     }
 
     form {

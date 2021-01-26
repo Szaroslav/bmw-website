@@ -1,8 +1,10 @@
 @import '_variables.scss';
 
-$columns-number:    3;
-$gap:               30px;
-$line-size:         1px;
+$ld-cols:       3;
+$md-cols:       2;
+$sd-cols:       1;
+$gap:           30px;
+$line-size:     1px;
 
 .bmw-list {
     display: flex;
@@ -11,11 +13,31 @@ $line-size:         1px;
     list-style-type: none;
 
     .bmw-list-item {
-        flex: 0 0 calc((100% - (#{$columns-number} - 1) * #{$gap}) / #{$columns-number});
+        flex: 0 0 calc((100% - (#{$ld-cols} - 1) * #{$gap}) / #{$ld-cols});
         padding: 45px 0;
 
-        &:not(:nth-child(3n)) {
-            margin-right: 30px;
+
+        @media screen and (min-width: $m-device + 1) {    
+            &:not(:nth-child(#{$ld-cols}n)) {
+                margin-right: $gap;
+            }
+        }
+
+        @media screen and (max-width: $m-device) {
+            & {
+                flex-basis: calc((100% - (#{$md-cols} - 1) * #{$gap}) / #{$md-cols});
+            }
+
+            &:not(:nth-child(#{$md-cols}n)) {
+                margin-right: $gap;
+            }
+        }
+
+        @media screen and (max-width: $s-device) {
+            & {
+                flex-basis: 100%;
+                margin-right: 0;
+            }
         }
 
         p {
@@ -44,8 +66,6 @@ $line-size:         1px;
     
         .bmw-list-content {
             padding-top: 30px;
-            font: 400 14px $font-secondary, sans-serif;
-            color: $text-dark;
         }  
     }
 }

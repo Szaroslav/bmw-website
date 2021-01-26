@@ -35,19 +35,35 @@ $fluid-irr-width:       82.5%;
         }
     }
 
+    @media screen and (max-width: $m-device) {
+        &.irregular-left, &.irregular-right {
+            margin: 0 auto;
+        }
+    }
+
     @media screen and (max-width: $s-device) {
         & {
             width: 90%;
         }
+
+        &.irregular-left, &.irregular-right {
+            width: 100%;
+        }
     }
 }
 
-.bwm-text-1 {
+.bmw-text-1 {
     font: 700 2.25rem $font-primary, sans-serif;
     color: black;
+    line-height: 104%;
 }
 
-.bwm-text-2 {
+.bmw-text-2 {
     font: 300 1.25rem $font-secondary, sans-serif;
     color: $grey;
+}
+
+.bmw-text-3 {
+    font: .875rem $font-tertiary, sans-serif;
+    color: $text-dark;
 }

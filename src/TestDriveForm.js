@@ -13,9 +13,9 @@ const TestDriveForm = () => {
             </div>
             <div className='bmw-fluid-container'>
                 <div className='bmw-td-form__form'>
-                    <h3 className='bwm-text-1'>UMÓW JAZDĘ PRÓBNĄ <sup>BMW iX</sup></h3>
-                    <p className='bwm-text-2'>Zachęcamy do ograniczenia poruszania się i pozostania w domu.</p>
-                    <p className='bwm-text-2'>Jeśli jednak jazda testowa okaże się niezbędna prosimy o wypełnienie poniższego formularza.</p>
+                    <h3 className='bmw-text-1'>UMÓW JAZDĘ PRÓBNĄ <sup>BMW iX</sup></h3>
+                    <p className='bmw-text-2'>Zachęcamy do ograniczenia poruszania się i pozostania w domu.</p>
+                    <p className='bmw-text-2'>Jeśli jednak jazda testowa okaże się niezbędna prosimy o wypełnienie poniższego formularza.</p>
                     <form>
                         <p>Wypełnij formularz swoimi danymi.</p>
                         <ul>
